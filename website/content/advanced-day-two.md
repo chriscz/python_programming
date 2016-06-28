@@ -125,10 +125,12 @@ returns True if the number is in the list or False otherwise.
                 False
             """
             pass
+
 11. **EXERCISE** Write a function *remove_dup* that takes a single list parameter and 
 removes all duplicates from it. If there are duplicates, you should remove all of them.
-*NOTE*: It doesn't matter which of the duplicates you remove, as long as there
-are no duplicates after usign remove_dup!!
+*NOTE*: It doesn''t matter which of the duplicates you remove, as long as there
+are no duplicates after usign remove_dup!
+
 
         #!python
         def remove_dup(L):
@@ -181,7 +183,7 @@ are no duplicates after usign remove_dup!!
 
 Using pass inside a function
 -----
-You'll see that I used **pass** in the above functions.
+You''ll see that I used **pass** in the above functions.
 That just tells python that there is nothing to do inside this function.
 So when you actually write your solutions, you can remove **pass** and then
 write your solution.
