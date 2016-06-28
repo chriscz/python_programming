@@ -1,0 +1,10 @@
+{
+    "pages": [
+        {
+            "title": "Advanced Programming", 
+            "text":"Ok, so as promised here is the website. You can expect more exercises to be uploaded in the next hour. Problems EXERCISE Write a function called printn that has the following signature and does what is described in the doc string. 1 2 3 4 5 6 7 8 9 10def printn(string, count): &#34;&#34;&#34;Prints the string `string`, `count` number of times. For example, &gt;&gt;&gt; printn(&#39;Hello&#39;, 3) Hello Hello Hello &#34;&#34;&#34; pass EXERCISE Write a function array_sum that takes two lists of the same length as arguments, and returns a list that that is the element-wise sum of the two lists. 1 2 3 4 5 6 7 8 9def array_sum(list1, list2): &#34;&#34;&#34;Takes two lists and returns a new list that is the element-wise sum of the lists. For example, &gt;&gt;&gt; array_sum([1,2,3], [1,2,3]) [2, 4, 6] &#34;&#34;&#34; pass Write a function :python:swop that takes a list and two positions in the list as arguments, it then swops the values at the two positions. 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26def swop(L, x, y): &#34;&#34;&#34; Takes two indexes and swops (switches) the values of L at that index Arguments --------- L: list A python list of elements x: int An index into the list L. x must satisfy x &gt;= 0 and x &lt; len(L) y: int An index into the list L. y must satisfy y &gt;= 0 and y &lt; len(L) Examples -------- &gt;&gt;&gt; L = [1,2,3,4,5] &gt;&gt;&gt; swop(L, 0, 4) &gt;&gt;&gt; print(L) [5, 2, 3, 4] &gt;&gt;&gt; L = [1,2,3] &gt;&gt;&gt; swop(L, 1, 1) # Swop element number two with itself &gt;&gt;&gt; print(L) [1, 2, 3] &#34;&#34;&#34; pass Using pass inside a function You&#39;ll see that I used :python:pass in the above functions. That just tells python that there is nothing to do inside this function. So when you actually write your solutions, you can remove :python:pass and then write your solution. Next problems coming in a bit..", 
+            "tags": "Exercises", 
+            "loc": "https://chriscz.github.io/python_programming/advanced-programming.html"
+        }        
+    ]
+}
