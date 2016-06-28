@@ -38,7 +38,7 @@ and does what is described in the doc string.
             """
             pass
 
-3. Write a function :python:`swop` that takes a list and two positions in the 
+3. Write a function *swop* that takes a list and two positions in the 
    list as arguments, it then swops the values at the two positions.
 
         #!python
@@ -70,13 +70,50 @@ and does what is described in the doc string.
             """
             pass
 
+            
+
+7. **READING** Read about how python dictionaries work (See the introduction PDF written by me and Mike).
+   After you understand this, go ahead and do the next dictionary exercises
+
+8. **EXERCISE** Write a program that reads in the names and ages of
+of your friends *N* friends (N is the number of friends whose names you want
+ to read in). these should then be put inside a dictionary, mapping each user
+ to his/her age. Look at the following example which shows
+ you how to store the ages of two people.
+
+        #!python
+        >>> ages = {}
+        >>> ages['bob'] = 16
+        >>> ages['alice'] = 19
+        >>> print(ages['alice'])
+        19
+
+9. **EXERCISE** Create a function *read_ages* that takes a single parameter **n** and then reads in 
+the names and ages of **n** people into a dictionary and returns that dictionary.
+for example:
+        
+        #!python
+        >>> ages = read_ages(2)
+        Please enter a person's name: 
+        Janice
+        Please enter their age:
+        15
+        Please enter a person's name: 
+        Alice
+        Please enter their age:
+        14
+        >>> print(ages['Janice'])
+        15
+        >>> print(ages['Alice'])
+        14
+
 
 
 Using pass inside a function
 -----
-You'll see that I used :python:`pass` in the above functions.
+You'll see that I used **pass** in the above functions.
 That just tells python that there is nothing to do inside this function.
-So when you actually write your solutions, you can remove :python:`pass` and then
+So when you actually write your solutions, you can remove **pass** and then
 write your solution.
 
 

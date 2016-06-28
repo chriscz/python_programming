@@ -6,7 +6,6 @@ AUTHOR = u'Mike & Chris'
 SITENAME = u'Programming in Python'
 SITEURL = 'https://chriscz.github.io/python_programming'
 
-THEME = 'pelican-mg' 
 
 PATH = 'content'
 
@@ -40,7 +39,8 @@ DEFAULT_PAGINATION = 10
 
 
 # --- Theme specific configuration
-TAG_SAVE_AS = ''
-AUTHOR_SAVE_AS = ''
-DIRECT_TEMPLATES = ('index', 'categories', 'archives', 'search', 'tipue_search')
-TIPUE_SEARCH_SAVE_AS = 'tipue_search.json'
+#THEME = 'pelican-mg' 
+#TAG_SAVE_AS = ''
+#AUTHOR_SAVE_AS = ''
+#DIRECT_TEMPLATES = ('index', 'categories', 'archives', 'search', 'tipue_search')
+#TIPUE_SEARCH_SAVE_AS = 'tipue_search.json'
