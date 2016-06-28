@@ -38,6 +38,7 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 
+
 # --- Theme specific configuration
 #THEME = 'pelican-mg' 
 #TAG_SAVE_AS = ''

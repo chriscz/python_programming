@@ -125,6 +125,55 @@ returns True if the number is in the list or False otherwise.
                 False
             """
             pass
+11. **EXERCISE** Write a function *remove_dup* that takes a single list parameter and 
+removes all duplicates from it. If there are duplicates, you should remove all of them.
+*NOTE*: It doesn't matter which of the duplicates you remove, as long as there
+are no duplicates after usign remove_dup!!
+
+        #!python
+        def remove_dup(L):
+            """Removes all elements that are duplicates from L
+               
+               Examples
+               --------
+               >>> L = [1, 1, 2, 3, 1]
+               >>> remove_dup(L)
+               >>> L
+               [1, 2, 3]
+               # OR
+               [2, 3, 1]
+               >>> L = [1, 55, 6, 7, 7, 8, 7]
+               >>> remove_dup(L)
+               >>> L
+               [1, 55, 6, 8, 7]
+               >>> L = [2, 4, 6]
+               >>> remove_dup(L)
+               >>> L
+               [2, 4, 6]
+            """
+            pass
+
+12. **EXERCISE** Write a function *does_share* that takes two lists as arguments and
+    returns True if the lists have at least one common element (an element that is in
+    both of the lists).
+
+        #!python
+        def does_share(list1, list2):
+            """Returns True if list1 and list2 share any elements, otherwise False
+
+               Examples
+               --------
+               >>> does_share([1], [2])
+               False
+               >>> does_share([1, 2], [2])
+               True
+               >>> does_share([2, 3, 11, 55], [55, 3, 4])
+               True
+               >>> does_share([2, 3, 11, 55], [9, 9, 10])
+               False
+            """
+            pass
+
 
 
 
