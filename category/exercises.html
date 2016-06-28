@@ -233,38 +233,56 @@ returns True if the number is in the list or False otherwise. </p>
 </pre></div>
 </td></tr></table>
 
-<ol>
+</li>
 <li>
 <p><strong>EXERCISE</strong> Write a function <em>remove_dup</em> that takes a single list parameter and 
 removes all duplicates from it. If there are duplicates, you should remove all of them.
-<em>NOTE</em>: It doesn't matter which of the duplicates you remove, as long as there
-are no duplicates after usign remove_dup!!</p>
-<h1>!python</h1>
-<p>def remove_dup(L):
-    """Removes all elements that are duplicates from L</p>
-<div class="highlight"><pre><span></span>   Examples
-   --------
-   &gt;&gt;&gt; L = [1, 1, 2, 3, 1]
-   &gt;&gt;&gt; remove_dup(L)
-   &gt;&gt;&gt; L
-   [1, 2, 3]
-   # OR
-   [2, 3, 1]
-   &gt;&gt;&gt; L = [1, 55, 6, 7, 7, 8, 7]
-   &gt;&gt;&gt; remove_dup(L)
-   &gt;&gt;&gt; L
-   [1, 55, 6, 8, 7]
-   &gt;&gt;&gt; L = [2, 4, 6]
-   &gt;&gt;&gt; remove_dup(L)
-   &gt;&gt;&gt; L
-   [2, 4, 6]
-&quot;&quot;&quot;
-pass
+<em>NOTE</em>: It doesn''t matter which of the duplicates you remove, as long as there
+are no duplicates after usign remove_dup!</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remove_dup</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Removes all elements that are duplicates from L</span>
+
+<span class="sd">       Examples</span>
+<span class="sd">       --------</span>
+<span class="sd">       &gt;&gt;&gt; L = [1, 1, 2, 3, 1]</span>
+<span class="sd">       &gt;&gt;&gt; remove_dup(L)</span>
+<span class="sd">       &gt;&gt;&gt; L</span>
+<span class="sd">       [1, 2, 3]</span>
+<span class="sd">       # OR</span>
+<span class="sd">       [2, 3, 1]</span>
+<span class="sd">       &gt;&gt;&gt; L = [1, 55, 6, 7, 7, 8, 7]</span>
+<span class="sd">       &gt;&gt;&gt; remove_dup(L)</span>
+<span class="sd">       &gt;&gt;&gt; L</span>
+<span class="sd">       [1, 55, 6, 8, 7]</span>
+<span class="sd">       &gt;&gt;&gt; L = [2, 4, 6]</span>
+<span class="sd">       &gt;&gt;&gt; remove_dup(L)</span>
+<span class="sd">       &gt;&gt;&gt; L</span>
+<span class="sd">       [2, 4, 6]</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
 </pre></div>
+</td></tr></table>
 
-
-</li>
-</ol>
 </li>
 <li>
 <p><strong>EXERCISE</strong> Write a function <em>does_share</em> that takes two lists as arguments and
@@ -305,7 +323,7 @@ pass
 </li>
 </ol>
 <h2>Using pass inside a function</h2>
-<p>You'll see that I used <strong>pass</strong> in the above functions.
+<p>You''ll see that I used <strong>pass</strong> in the above functions.
 That just tells python that there is nothing to do inside this function.
 So when you actually write your solutions, you can remove <strong>pass</strong> and then
 write your solution.</p>
