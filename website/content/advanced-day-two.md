@@ -8,7 +8,7 @@ exercises to be uploaded in the next hour.
 
 Problems
 --------
-1. Write a function called *printn* that has the following signature
+1. **EXERCISE** Write a function called *printn* that has the following signature
 and does what is described in the doc string.
 
         #!python
@@ -23,7 +23,7 @@ and does what is described in the doc string.
             """
             pass
 
-2. Write a function *array_sum* that takes two lists of the same length
+2. **EXERCISE** Write a function *array_sum* that takes two lists of the same length
    as arguments, and returns a list that that is the element-wise 
    sum of the two lists.
 
@@ -38,11 +38,44 @@ and does what is described in the doc string.
             """
             pass
 
+3. Write a function :python:`swop` that takes a list and two positions in the 
+   list as arguments, it then swops the values at the two positions.
+        #!python
+        def swop(L, x, y):
+            """
+            Takes two indexes and swops (switches) the values of L at that index
+            Arguments
+            ---------
+            L: list
+                A python list of elements
+            x: int
+                An index into the list L. x must satisfy x >= 0 and x < len(L)
+            y: int
+                An index into the list L. y must satisfy y >= 0 and y < len(L)
+
+            Examples
+            --------
+            >>> L = [1,2,3,4,5]
+            >>> swop(L, 0, 4)
+            >>> print(L)
+            [5, 2, 3, 4]
+
+
+            >>> L = [1,2,3]
+            >>> swop(L, 1, 1) # Swop element number two with itself
+            >>> print(L)
+            [1, 2, 3]
+
+            """
+            pass
+
+
+
 Using pass inside a function
 -----
-You'll see that I used *pass* in the above functions.
+You'll see that I used :python:`pass` in the above functions.
 That just tells python that there is nothing to do inside this function.
-So when you actually write your solutions, you can remove pass and then
+So when you actually write your solutions, you can remove :python:`pass` and then
 write your solution.
 
 
