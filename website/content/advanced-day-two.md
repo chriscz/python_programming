@@ -107,6 +107,27 @@ for example:
         >>> print(ages['Alice'])
         14
 
+10. **EXERCISE** Write a function *contains* that takes two arguments: a list and a number and 
+returns True if the number is in the list or False otherwise. 
+
+        #!python
+        def contains(list, x):
+            """Returns True if x is in list and False if it is not
+            
+                Examples
+                --------
+                >>> x = [1, 2, 3]
+                >>> contains(x, 1)
+                True
+                >>> contains(x, 6)
+                False
+                >>> contains(x, -1)
+                False
+            """
+            pass
+
+
+
 
 
 Using pass inside a function
