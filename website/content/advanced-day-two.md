@@ -70,7 +70,32 @@ and does what is described in the doc string.
             """
             pass
 
+4. Write a function *find_min_index* which takes two parameters, a list and an index. the function
+   should find the minimum of all elements that lie above and including the index x. In other words,
+   if I have a list L = [1,100,3,77, -1, 8] and an index 3, Then your function must search from L[3] to
+   the end of L, instead of starting at L[0].
+        
+        #!python
+        def find_min_index(list, from_index):
+           """
+           Returns the index of the minimum value, but starting the 
+           search from `from_index`
             
+           Examples               
+           --------
+           >>> L = [1,100,3,77, 5, 8]      
+           >>> find_min_index(L, 0)
+           0
+           >>> find_min_index(L, 1)
+           2
+           >>> find_min_index(L, 3)
+           4
+           >>> find_min_index(L, 5)
+           5
+           """
+           pass
+
+        
 
 7. **READING** Read about how python dictionaries work (See the introduction PDF written by me and Mike).
    After you understand this, go ahead and do the next dictionary exercises
