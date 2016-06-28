@@ -40,6 +40,7 @@ and does what is described in the doc string.
 
 3. Write a function :python:`swop` that takes a list and two positions in the 
    list as arguments, it then swops the values at the two positions.
+
         #!python
         def swop(L, x, y):
             """
