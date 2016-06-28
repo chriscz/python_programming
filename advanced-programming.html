@@ -238,6 +238,75 @@ returns True if the number is in the list or False otherwise. </p>
 </pre></div>
 </td></tr></table>
 
+<ol>
+<li>
+<p><strong>EXERCISE</strong> Write a function <em>remove_dup</em> that takes a single list parameter and 
+removes all duplicates from it. If there are duplicates, you should remove all of them.
+<em>NOTE</em>: It doesn't matter which of the duplicates you remove, as long as there
+are no duplicates after usign remove_dup!!</p>
+<h1>!python</h1>
+<p>def remove_dup(L):
+    """Removes all elements that are duplicates from L</p>
+<div class="highlight"><pre><span></span>   Examples
+   --------
+   &gt;&gt;&gt; L = [1, 1, 2, 3, 1]
+   &gt;&gt;&gt; remove_dup(L)
+   &gt;&gt;&gt; L
+   [1, 2, 3]
+   # OR
+   [2, 3, 1]
+   &gt;&gt;&gt; L = [1, 55, 6, 7, 7, 8, 7]
+   &gt;&gt;&gt; remove_dup(L)
+   &gt;&gt;&gt; L
+   [1, 55, 6, 8, 7]
+   &gt;&gt;&gt; L = [2, 4, 6]
+   &gt;&gt;&gt; remove_dup(L)
+   &gt;&gt;&gt; L
+   [2, 4, 6]
+&quot;&quot;&quot;
+pass
+</pre></div>
+
+
+</li>
+</ol>
+</li>
+<li>
+<p><strong>EXERCISE</strong> Write a function <em>does_share</em> that takes two lists as arguments and
+    returns True if the lists have at least one common element (an element that is in
+    both of the lists).</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">does_share</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;Returns True if list1 and list2 share any elements, otherwise False</span>
+
+<span class="sd">       Examples</span>
+<span class="sd">       --------</span>
+<span class="sd">       &gt;&gt;&gt; does_share([1], [2])</span>
+<span class="sd">       False</span>
+<span class="sd">       &gt;&gt;&gt; does_share([1, 2], [2])</span>
+<span class="sd">       True</span>
+<span class="sd">       &gt;&gt;&gt; does_share([2, 3, 11, 55], [55, 3, 4])</span>
+<span class="sd">       True</span>
+<span class="sd">       &gt;&gt;&gt; does_share([2, 3, 11, 55], [9, 9, 10])</span>
+<span class="sd">       False</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">pass</span>
+</pre></div>
+</td></tr></table>
+
 </li>
 </ol>
 <h2>Using pass inside a function</h2>
