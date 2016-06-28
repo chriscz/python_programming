@@ -87,7 +87,7 @@ and does what is described in the doc string.</p>
 
 </li>
 <li>
-<p>Write a function :python:<code>swop</code> that takes a list and two positions in the 
+<p>Write a function <em>swop</em> that takes a list and two positions in the 
    list as arguments, it then swops the values at the two positions.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -144,11 +144,67 @@ and does what is described in the doc string.</p>
 </td></tr></table>
 
 </li>
+<li>
+<p><strong>READING</strong> Read about how python dictionaries work (See the introduction PDF written by me and Mike).
+   After you understand this, go ahead and do the next dictionary exercises</p>
+</li>
+<li>
+<p><strong>EXERCISE</strong> Write a program that reads in the names and ages of
+of your friends <em>N</em> friends (N is the number of friends whose names you want
+ to read in). these should then be put inside a dictionary, mapping each user
+ to his/her age. Look at the following example which shows
+ you how to store the ages of two people.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">ages</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">ages</span><span class="p">[</span><span class="s1">&#39;bob&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">16</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">ages</span><span class="p">[</span><span class="s1">&#39;alice&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">19</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">ages</span><span class="p">[</span><span class="s1">&#39;alice&#39;</span><span class="p">])</span>
+<span class="mi">19</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+<li>
+<p><strong>EXERCISE</strong> Create a function <em>read_ages</em> that takes a single parameter <strong>n</strong> and then reads in 
+the names and ages of <strong>n</strong> people into a dictionary and returns that dictionary.
+for example:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">ages</span> <span class="o">=</span> <span class="n">read_ages</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">Please</span> <span class="n">enter</span> <span class="n">a</span> <span class="n">person</span><span class="s1">&#39;s name: </span>
+<span class="n">Janice</span>
+<span class="n">Please</span> <span class="n">enter</span> <span class="n">their</span> <span class="n">age</span><span class="p">:</span>
+<span class="mi">15</span>
+<span class="n">Please</span> <span class="n">enter</span> <span class="n">a</span> <span class="n">person</span><span class="s1">&#39;s name: </span>
+<span class="n">Alice</span>
+<span class="n">Please</span> <span class="n">enter</span> <span class="n">their</span> <span class="n">age</span><span class="p">:</span>
+<span class="mi">14</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">ages</span><span class="p">[</span><span class="s1">&#39;Janice&#39;</span><span class="p">])</span>
+<span class="mi">15</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">ages</span><span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">])</span>
+<span class="mi">14</span>
+</pre></div>
+</td></tr></table>
+
+</li>
 </ol>
 <h2>Using pass inside a function</h2>
-<p>You'll see that I used :python:<code>pass</code> in the above functions.
+<p>You'll see that I used <strong>pass</strong> in the above functions.
 That just tells python that there is nothing to do inside this function.
-So when you actually write your solutions, you can remove :python:<code>pass</code> and then
+So when you actually write your solutions, you can remove <strong>pass</strong> and then
 write your solution.</p>
 <p>Next problems coming in a bit..</p>                </article>
             </aside><!-- /#featured -->
