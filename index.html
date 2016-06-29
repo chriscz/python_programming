@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8" />
         <title>Programming in Python</title>
-        <link rel="stylesheet" href="https://chriscz.github.io/python_programming/theme/css/main.css" />
+        <link rel="stylesheet" href="/theme/css/main.css" />
 
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,26 +12,95 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="https://chriscz.github.io/python_programming/">Programming in Python </a></h1>
+                <h1><a href="/">Programming in Python </a></h1>
                 <nav><ul>
-                    <li><a href="https://chriscz.github.io/python_programming/category/exercises.html">Exercises</a></li>
+                    <li><a href="/category/exercises.html">Exercises</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://chriscz.github.io/python_programming/advanced-programming.html">Advanced Programming</a></h1>
+                    <h1 class="entry-title"><a href="/advanced-programming-day-3.html">Advanced Programming (Day 3)</a></h1>
+<footer class="post-info">
+        <abbr class="published" title="2016-07-29T18:45:00+02:00">
+                Published: Fri 29 July 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/mike-chris.html">Mike & Chris</a>
+        </address>
+<p>In <a href="/category/exercises.html">Exercises</a>.</p>
+
+</footer><!-- /.post-info --><ol>
+<li>As you would remember, we  asked you to write the <em>Point</em> class in Python. 
+This class represents a point on the cartesian plane. Think about what 
+attributes you need for this class, then complete the constructor and the methods.
+Let's see what the structure and the methods are for this class<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
+
+    <span class="c1"># what arguments does the constructor take?</span>
+    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">distance_to</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Returns the distance between this point and another point,</span>
+<span class="sd">        p using the distance formula</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+
+    <span class="k">def</span> <span class="nf">midpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Calculates the midpoint of p and this point.</span>
+<span class="sd">        NOTE: This function must return a new point</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">pass</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+</ol>                </article>
+            </aside><!-- /#featured -->
+                <section id="content" class="body">
+                    <h1>Other articles</h1>
+                    <hr />
+                    <ol id="posts-list" class="hfeed">
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/advanced-programming.html" rel="bookmark"
+                           title="Permalink to Advanced Programming">Advanced Programming</a></h1>
+                </header>
+
+                <div class="entry-content">
 <footer class="post-info">
         <abbr class="published" title="2016-07-28T18:45:00+02:00">
                 Published: Thu 28 July 2016
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="https://chriscz.github.io/python_programming/author/mike-chris.html">Mike & Chris</a>
+                By                         <a class="url fn" href="/author/mike-chris.html">Mike & Chris</a>
         </address>
-<p>In <a href="https://chriscz.github.io/python_programming/category/exercises.html">Exercises</a>.</p>
+<p>In <a href="/category/exercises.html">Exercises</a>.</p>
 
-</footer><!-- /.post-info --><p>Ok, so as promised here is the website. You can expect more 
+</footer><!-- /.post-info -->                <p>Ok, so as promised here is the website. You can expect more 
 exercises to be uploaded in the next hour.</p>
 <h2>Problems</h2>
 <ol>
@@ -46,333 +115,12 @@ and does what is described in the doc string.</p>
  6
  7
  8
- 9
-10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">printn</span><span class="p">(</span><span class="n">string</span><span class="p">,</span> <span class="n">count</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Prints the string `string`, `count` number of times.</span>
-<span class="sd">       For example,</span>
-
-<span class="sd">       &gt;&gt;&gt; printn(&#39;Hello&#39;, 3)</span>
-<span class="sd">       Hello</span>
-<span class="sd">       Hello</span>
-<span class="sd">       Hello</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">pass</span>
-</pre></div>
-</td></tr></table>
-
-</li>
-<li>
-<p><strong>EXERCISE</strong> Write a function <em>array_sum</em> that takes two lists of the same length
-   as arguments, and returns a list that that is the element-wise 
-   sum of the two lists.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7
-8
-9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">array_sum</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Takes two lists and returns a new list that is the </span>
-<span class="sd">       element-wise sum of the lists.</span>
-
-<span class="sd">       For example,</span>
-<span class="sd">       &gt;&gt;&gt; array_sum([1,2,3], [1,2,3])</span>
-<span class="sd">       [2, 4, 6]</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">pass</span>
-</pre></div>
-</td></tr></table>
-
-</li>
-<li>
-<p>Write a function <em>swop</em> that takes a list and two positions in the 
-   list as arguments, it then swops the values at the two positions.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24
-25
-26</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">swop</span><span class="p">(</span><span class="n">L</span><span class="p">,</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Takes two indexes and swops (switches) the values of L at that index</span>
-<span class="sd">    Arguments</span>
-<span class="sd">    ---------</span>
-<span class="sd">    L: list</span>
-<span class="sd">        A python list of elements</span>
-<span class="sd">    x: int</span>
-<span class="sd">        An index into the list L. x must satisfy x &gt;= 0 and x &lt; len(L)</span>
-<span class="sd">    y: int</span>
-<span class="sd">        An index into the list L. y must satisfy y &gt;= 0 and y &lt; len(L)</span>
-
-<span class="sd">    Examples</span>
-<span class="sd">    --------</span>
-<span class="sd">    &gt;&gt;&gt; L = [1,2,3,4,5]</span>
-<span class="sd">    &gt;&gt;&gt; swop(L, 0, 4)</span>
-<span class="sd">    &gt;&gt;&gt; print(L)</span>
-<span class="sd">    [5, 2, 3, 4]</span>
-
-<span class="sd">    &gt;&gt;&gt; L = [1,2,3]</span>
-<span class="sd">    &gt;&gt;&gt; swop(L, 1, 1) # Swop element number two with itself</span>
-<span class="sd">    &gt;&gt;&gt; print(L)</span>
-<span class="sd">    [1, 2, 3]</span>
-
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">pass</span>
-</pre></div>
-</td></tr></table>
-
-</li>
-<li>
-<p>Write a function <em>find_min_index</em> which takes two parameters, a list and an index. the function
-   should find the minimum of all elements that lie above and including the index x. In other words,
-   if I have a list L = [1,100,3,77, -1, 8] and an index 3, Then your function must search from L[3] to
-   the end of L, instead of starting at L[0].</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">find_min_index</span><span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="n">from_index</span><span class="p">):</span>
-   <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">   Returns the index of the minimum value, but starting the </span>
-<span class="sd">   search from `from_index`</span>
-
-<span class="sd">   Examples               </span>
-<span class="sd">   --------</span>
-<span class="sd">   &gt;&gt;&gt; L = [1,100,3,77, 5, 8]      </span>
-<span class="sd">   &gt;&gt;&gt; find_min_index(L, 0)</span>
-<span class="sd">   0</span>
-<span class="sd">   &gt;&gt;&gt; find_min_index(L, 1)</span>
-<span class="sd">   2</span>
-<span class="sd">   &gt;&gt;&gt; find_min_index(L, 3)</span>
-<span class="sd">   4</span>
-<span class="sd">   &gt;&gt;&gt; find_min_index(L, 5)</span>
-<span class="sd">   5</span>
-<span class="sd">   &quot;&quot;&quot;</span>
-   <span class="k">pass</span>
-</pre></div>
-</td></tr></table>
-
-</li>
-<li>
-<p><strong>READING</strong> Read about how python dictionaries work (See the introduction PDF written by me and Mike).
-   After you understand this, go ahead and do the next dictionary exercises</p>
-</li>
-<li>
-<p><strong>EXERCISE</strong> Write a program that reads in the names and ages of
-of your friends <em>N</em> friends (N is the number of friends whose names you want
- to read in). these should then be put inside a dictionary, mapping each user
- to his/her age. Look at the following example which shows
- you how to store the ages of two people.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">ages</span> <span class="o">=</span> <span class="p">{}</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">ages</span><span class="p">[</span><span class="s1">&#39;bob&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">16</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="n">ages</span><span class="p">[</span><span class="s1">&#39;alice&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="mi">19</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">ages</span><span class="p">[</span><span class="s1">&#39;alice&#39;</span><span class="p">])</span>
-<span class="mi">19</span>
-</pre></div>
-</td></tr></table>
-
-</li>
-<li>
-<p><strong>EXERCISE</strong> Create a function <em>read_ages</em> that takes a single parameter <strong>n</strong> and then reads in 
-the names and ages of <strong>n</strong> people into a dictionary and returns that dictionary.
-for example:</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="o">&gt;&gt;&gt;</span> <span class="n">ages</span> <span class="o">=</span> <span class="n">read_ages</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">a</span> <span class="n">person</span><span class="s1">&#39;s name: </span>
-<span class="n">Janice</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">their</span> <span class="n">age</span><span class="p">:</span>
-<span class="mi">15</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">a</span> <span class="n">person</span><span class="s1">&#39;s name: </span>
-<span class="n">Alice</span>
-<span class="n">Please</span> <span class="n">enter</span> <span class="n">their</span> <span class="n">age</span><span class="p">:</span>
-<span class="mi">14</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">ages</span><span class="p">[</span><span class="s1">&#39;Janice&#39;</span><span class="p">])</span>
-<span class="mi">15</span>
-<span class="o">&gt;&gt;&gt;</span> <span class="k">print</span><span class="p">(</span><span class="n">ages</span><span class="p">[</span><span class="s1">&#39;Alice&#39;</span><span class="p">])</span>
-<span class="mi">14</span>
-</pre></div>
-</td></tr></table>
-
-</li>
-<li>
-<p><strong>EXERCISE</strong> Write a function <em>contains</em> that takes two arguments: a list and a number and 
-returns True if the number is in the list or False otherwise. </p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">contains</span><span class="p">(</span><span class="nb">list</span><span class="p">,</span> <span class="n">x</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Returns True if x is in list and False if it is not</span>
-
-<span class="sd">        Examples</span>
-<span class="sd">        --------</span>
-<span class="sd">        &gt;&gt;&gt; x = [1, 2, 3]</span>
-<span class="sd">        &gt;&gt;&gt; contains(x, 1)</span>
-<span class="sd">        True</span>
-<span class="sd">        &gt;&gt;&gt; contains(x, 6)</span>
-<span class="sd">        False</span>
-<span class="sd">        &gt;&gt;&gt; contains(x, -1)</span>
-<span class="sd">        False</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">pass</span>
-</pre></div>
-</td></tr></table>
-
-</li>
-<li>
-<p><strong>EXERCISE</strong> Write a function <em>remove_dup</em> that takes a single list parameter and 
-removes all duplicates from it. If there are duplicates, you should remove all of them.
-<em>NOTE</em>: It doesn''t matter which of the duplicates you remove, as long as there
-are no duplicates after usign remove_dup!</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">remove_dup</span><span class="p">(</span><span class="n">L</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Removes all elements that are duplicates from L</span>
-
-<span class="sd">       Examples</span>
-<span class="sd">       --------</span>
-<span class="sd">       &gt;&gt;&gt; L = [1, 1, 2, 3, 1]</span>
-<span class="sd">       &gt;&gt;&gt; remove_dup(L)</span>
-<span class="sd">       &gt;&gt;&gt; L</span>
-<span class="sd">       [1, 2, 3]</span>
-<span class="sd">       # OR</span>
-<span class="sd">       [2, 3, 1]</span>
-<span class="sd">       &gt;&gt;&gt; L = [1, 55, 6, 7, 7, 8, 7]</span>
-<span class="sd">       &gt;&gt;&gt; remove_dup(L)</span>
-<span class="sd">       &gt;&gt;&gt; L</span>
-<span class="sd">       [1, 55, 6, 8, 7]</span>
-<span class="sd">       &gt;&gt;&gt; L = [2, 4, 6]</span>
-<span class="sd">       &gt;&gt;&gt; remove_dup(L)</span>
-<span class="sd">       &gt;&gt;&gt; L</span>
-<span class="sd">       [2, 4, 6]</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">pass</span>
-</pre></div>
-</td></tr></table>
-
-</li>
-<li>
-<p><strong>EXERCISE</strong> Write a function <em>does_share</em> that takes two lists as arguments and
-    returns True if the lists have at least one common element (an element that is in
-    both of the lists).</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">does_share</span><span class="p">(</span><span class="n">list1</span><span class="p">,</span> <span class="n">list2</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;Returns True if list1 and list2 share any elements, otherwise False</span>
-
-<span class="sd">       Examples</span>
-<span class="sd">       --------</span>
-<span class="sd">       &gt;&gt;&gt; does_share([1], [2])</span>
-<span class="sd">       False</span>
-<span class="sd">       &gt;&gt;&gt; does_share([1, 2], [2])</span>
-<span class="sd">       True</span>
-<span class="sd">       &gt;&gt;&gt; does_share([2, 3, 11, 55], [55, 3, 4])</span>
-<span class="sd">       True</span>
-<span class="sd">       &gt;&gt;&gt; does_share([2, 3, 11, 55], [9, 9, 10])</span>
-<span class="sd">       False</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">pass</span>
-</pre></div>
-</td></tr></table>
-
-</li>
-</ol>
-<h2>Using pass inside a function</h2>
-<p>You''ll see that I used <strong>pass</strong> in the above functions.
-That just tells python that there is nothing to do inside this function.
-So when you actually write your solutions, you can remove <strong>pass</strong> and then
-write your solution.</p>
-<p>Next problems coming in a bit..</p>                </article>
-            </aside><!-- /#featured -->
+ 9 ...</pre></div></td></tr></table></li></ol>
+                <a class="readmore" href="/advanced-programming.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+                </ol><!-- /#posts-list -->
+                </section><!-- /#content -->
         <section id="extras" class="body">
         </section><!-- /#extras -->
 
