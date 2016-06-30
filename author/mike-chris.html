@@ -3,7 +3,7 @@
 <head>
         <meta charset="utf-8" />
         <title>Programming in Python - Mike & Chris</title>
-        <link rel="stylesheet" href="https://chriscz.github.io/python_programming/theme/css/main.css" />
+        <link rel="stylesheet" href="/theme/css/main.css" />
 
         <!--[if IE]>
             <script src="https://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -12,71 +12,120 @@
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="https://chriscz.github.io/python_programming/">Programming in Python </a></h1>
+                <h1><a href="/">Programming in Python </a></h1>
                 <nav><ul>
-                    <li><a href="https://chriscz.github.io/python_programming/category/exercises.html">Exercises</a></li>
+                    <li><a href="/category/exercises.html">Exercises</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
             <aside id="featured" class="body">
                 <article>
-                    <h1 class="entry-title"><a href="https://chriscz.github.io/python_programming/advanced-programming-day-3.html">Advanced Programming (Day 3)</a></h1>
+                    <h1 class="entry-title"><a href="/advanced-programming-day-four.html">Advanced Programming (Day four)</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2016-07-29T18:45:00+02:00">
-                Published: Fri 29 July 2016
+        <abbr class="published" title="2016-06-30T18:45:00+02:00">
+                Published: Thu 30 June 2016
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="https://chriscz.github.io/python_programming/author/mike-chris.html">Mike & Chris</a>
+                By                         <a class="url fn" href="/author/mike-chris.html">Mike & Chris</a>
         </address>
-<p>In <a href="https://chriscz.github.io/python_programming/category/exercises.html">Exercises</a>.</p>
+<p>In <a href="/category/exercises.html">Exercises</a>.</p>
 
-</footer><!-- /.post-info --><ol>
-<li>As you would remember, we  asked you to write the <em>Point</em> class in Python. 
-This class represents a point on the cartesian plane. Think about what 
-attributes you need for this class, then complete the constructor and the methods.
-Let's see what the structure and the methods are for this class<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">class</span> <span class="nc">Point</span><span class="p">:</span>
+</footer><!-- /.post-info --><p>Right, so from class you should remember that we started implementing the Learner class
+and that we completed the Date class. So here is the <strong>skeleton</strong>  for the file we
+expect to see tomorrow. Finish the unfinished methods in the skeleton code below, but don't worry too much if you can't do all the exercises,
+just do as many as you can. Tomorrow we plan to continue with Object-Oreintated programming, either by coding an electronic diary, or a game. 
+To be adequately prepared for this, you should just review some of the input-output things that you know. Or, if you prefer, we could code a small game, but it is then very important that you finish the Point class from Day 3, and review some of the drawing we did previously. Good Luck!</p>
+<div class="highlight"><pre><span></span>    <span class="c c-Singleline">#!python</span>
+    <span class="k">class</span> <span class="n">Date:</span>
+        <span class="n">def</span> <span class="n">__init__</span>(<span class="k">self</span>, <span class="n">year</span>, <span class="n">month</span>, <span class="n">day</span>):
+            <span class="k">self</span>.<span class="n">year</span> = <span class="n">year</span>
+            <span class="k">self</span>.<span class="n">month</span> = <span class="n">month</span>
+            <span class="k">self</span>.<span class="n">day</span> = <span class="n">day</span>
 
-    <span class="c1"># what arguments does the constructor take?</span>
-    <span class="k">def</span> <span class="nf">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="k">pass</span>
+        <span class="n">def</span> <span class="n">to_string</span>(<span class="k">self</span>):
+            <span class="s">&quot;&quot;&quot;</span>
+<span class="s">            returns a string</span>
+<span class="s">            &gt;&gt;&gt; D = Date(2016, 6,30)</span>
+<span class="s">            &gt;&gt;&gt; D.to_string()</span>
+<span class="s">            &gt;&gt;&gt; &#39;30 June 2016&#39;</span>
+<span class="s">            &quot;&quot;&quot;</span>
+            <span class="nb">pass</span>
 
-    <span class="k">def</span> <span class="nf">distance_to</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Returns the distance between this point and another point,</span>
-<span class="sd">        p using the distance formula</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">pass</span>
+        <span class="n">def</span> <span class="n">less_than</span>(<span class="n">D</span>):
+            <span class="s">&quot;&quot;&quot;</span>
+<span class="s">            takes in a Date D, returns True if self is an earlier date than D, and returns false otherwise</span>
+<span class="s">            &gt;&gt;&gt; D1 = Date(2016, 6, 30)</span>
+<span class="s">            &gt;&gt;&gt; D2 = Date(2017, 7, 32)</span>
+<span class="s">            &gt;&gt;&gt; D1.less_than(D2)</span>
+<span class="s">            True</span>
+<span class="s">            &gt;&gt;&gt; D2 = Date(2016, 7, 32)</span>
+<span class="s">            &gt;&gt;&gt; D1.less_than(D2)</span>
+<span class="s">            True</span>
+<span class="s">            &gt;&gt;&gt; D2 = Date(2016, 6, 32)</span>
+<span class="s">            &gt;&gt;&gt; D1.less_than(D2)</span>
+<span class="s">            True</span>
+<span class="s">            &gt;&gt;&gt; D2 = Date(2016, 6, 30)</span>
+<span class="s">            &gt;&gt;&gt; D1.less_than(D2)</span>
+<span class="s">            False</span>
+<span class="s">            &quot;&quot;&quot;</span>
+            <span class="nb">pass</span>
 
-    <span class="k">def</span> <span class="nf">midpoint</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">p</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">        Calculates the midpoint of p and this point.</span>
-<span class="sd">        NOTE: This function must return a new point</span>
-<span class="sd">        &quot;&quot;&quot;</span>
-        <span class="k">pass</span>
-</pre></div>
-</td></tr></table>
 
-</li>
-</ol>                </article>
+    <span class="k">class</span> <span class="n">Learner:</span>
+        <span class="n">def</span> <span class="n">__init__</span>(<span class="k">self</span>, <span class="n">first_name</span>, <span class="n">surname</span>, <span class="n">date_of_birth</span>, <span class="n">email</span>, <span class="n">address</span>):
+            <span class="k">self</span>.<span class="n">first_name</span> = <span class="n">first_name</span>
+            <span class="k">self</span>.<span class="n">surname</span>    = <span class="n">surname</span>
+            <span class="k">self</span>.<span class="n">date_of_birth</span> = <span class="n">date_of_birth</span>
+            <span class="k">self</span>.<span class="n">email</span> = <span class="n">email</span>
+            <span class="k">self</span>.<span class="n">address</span> = <span class="n">address</span>
+
+        <span class="n">def</span> <span class="n">display_details</span>(<span class="k">self</span>):
+            <span class="s">&quot;&quot;&quot;</span>
+<span class="s">            displays (prints) the details of the Learner, does NOT return anything.</span>
+<span class="s">            &gt;&gt;&gt; D = Date(1872, 6, 30)</span>
+<span class="s">            &gt;&gt;&gt; L = Learner(&quot;</span><span class="n">Bertrand</span><span class="s">&quot;, &quot;</span><span class="n">Russell</span><span class="s">&quot;, D, &quot;</span><span class="n">bertie</span><span class="nv">@gmail</span>.<span class="n">com</span><span class="s">&quot;, &quot;</span><span class="n">Cambridge</span><span class="s">&quot;)</span>
+<span class="s">            &gt;&gt;&gt; L.display_details()</span>
+<span class="s">            Name of Learner: Bertrand Russell</span>
+<span class="s">            Date of birth: 30 June 1872</span>
+<span class="s">            Email: bertie@gmail.completed</span>
+<span class="s">            Address: Cambridge</span>
+<span class="s">            &quot;&quot;&quot;</span>
+            <span class="nb">pass</span>
+
+        <span class="n">def</span> <span class="n">is_younger_than</span>(<span class="k">self</span>, <span class="n">L</span>):
+            <span class="s">&quot;&quot;&quot;this method takes in a Learner object L, and returns True if self is younger than L, returns false otherwise</span>
+<span class="s">            &gt;&gt;&gt; D1 = Date(1872, 6, 30)</span>
+<span class="s">            &gt;&gt;&gt; L1 = Learner(&quot;</span><span class="n">Bertrand</span><span class="s">&quot;, &quot;</span><span class="n">Russell</span><span class="s">&quot;, D1, &quot;</span><span class="n">bertie</span><span class="nv">@gmail</span>.<span class="n">com</span><span class="s">&quot;, &quot;</span><span class="n">Cambridge</span><span class="s">&quot;) </span>
+<span class="s">            &gt;&gt;&gt; D2 = Date(1879, 6, 30)</span>
+<span class="s">            &gt;&gt;&gt; L2 = Learner(&quot;</span><span class="n">Albert</span><span class="s">&quot;, &quot;</span><span class="n">Einstein</span><span class="s">&quot;, D2, &quot;</span><span class="n">uncle_albie</span><span class="nv">@gmail</span>.<span class="n">com</span><span class="s">&quot;, &quot;</span><span class="n">Princeton</span><span class="s">&quot;)</span>
+<span class="s">            &gt;&gt;&gt; L1.is_younger_than(L2)</span>
+<span class="s">            False</span>
+<span class="s">            pass</span>
+<span class="s">            &quot;&quot;&quot;</span>
+
+
+
+        <span class="k">class</span> <span class="n">ClassRoom:</span>
+        <span class="s">&quot;&quot;&quot;this class is supposed to represent a classroom of learners.</span>
+<span class="s">        it has no other attributes, other than a list of learners.&quot;&quot;&quot;</span>
+        <span class="n">def</span> <span class="n">__init__</span>(<span class="k">self</span>):
+            <span class="n">learner</span> = []
+
+        <span class="n">def</span> <span class="n">add_learner</span>(<span class="n">L</span>):
+            <span class="s">&quot;&quot;&quot;adds a learner L to the class room by appending it to learner&quot;&quot;&quot;</span>
+            <span class="k">self</span>.<span class="n">learner</span>.<span class="n">append</span>(<span class="n">L</span>)
+
+
+        <span class="n">def</span> <span class="n">youngest</span>(<span class="k">self</span>):
+            <span class="s">&quot;&quot;&quot;returns the youngest learner in the class&quot;&quot;&quot;</span>
+            <span class="nb">pass</span>
+
+
+        <span class="n">def</span> <span class="n">sort_by_age</span>(<span class="k">self</span>):
+            <span class="s">&quot;&quot;&quot;this method sorts the list learner by age, from youngest to oldest.&quot;&quot;&quot;</span>
+            <span class="nb">pass</span>
+</pre></div>                </article>
             </aside><!-- /#featured -->
                 <section id="content" class="body">
                     <h1>Other articles</h1>
@@ -85,20 +134,20 @@ Let's see what the structure and the methods are for this class<table class="hig
 
             <li><article class="hentry">
                 <header>
-                    <h1><a href="https://chriscz.github.io/python_programming/advanced-programming.html" rel="bookmark"
-                           title="Permalink to Advanced Programming">Advanced Programming</a></h1>
+                    <h1><a href="/advanced-programming-day-three.html" rel="bookmark"
+                           title="Permalink to Advanced Programming (Day Three)">Advanced Programming (Day Three)</a></h1>
                 </header>
 
                 <div class="entry-content">
 <footer class="post-info">
-        <abbr class="published" title="2016-07-28T18:45:00+02:00">
-                Published: Thu 28 July 2016
+        <abbr class="published" title="2016-06-29T18:45:00+02:00">
+                Published: Wed 29 June 2016
         </abbr>
 
         <address class="vcard author">
-                By                         <a class="url fn" href="https://chriscz.github.io/python_programming/author/mike-chris.html">Mike & Chris</a>
+                By                         <a class="url fn" href="/author/mike-chris.html">Mike & Chris</a>
         </address>
-<p>In <a href="https://chriscz.github.io/python_programming/category/exercises.html">Exercises</a>.</p>
+<p>In <a href="/category/exercises.html">Exercises</a>.</p>
 
 </footer><!-- /.post-info -->                <p>Ok, so as promised here is the website. You can expect more 
 exercises to be uploaded in the next hour.</p>
@@ -116,7 +165,44 @@ and does what is described in the doc string.</p>
  7
  8
  9 ...</pre></div></td></tr></table></li></ol>
-                <a class="readmore" href="https://chriscz.github.io/python_programming/advanced-programming.html">read more</a>
+                <a class="readmore" href="/advanced-programming-day-three.html">read more</a>
+                </div><!-- /.entry-content -->
+            </article></li>
+
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="/advanced-programming-day-2.html" rel="bookmark"
+                           title="Permalink to Advanced Programming (Day 2)">Advanced Programming (Day 2)</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-06-28T18:45:00+02:00">
+                Published: Tue 28 June 2016
+        </abbr>
+
+        <address class="vcard author">
+                By                         <a class="url fn" href="/author/mike-chris.html">Mike & Chris</a>
+        </address>
+<p>In <a href="/category/exercises.html">Exercises</a>.</p>
+
+</footer><!-- /.post-info -->                <p>Ok, so as promised here is the website. You can expect more 
+exercises to be uploaded in the next hour.</p>
+<h2>Problems</h2>
+<ol>
+<li>
+<p><strong>EXERCISE</strong> Write a function called <em>printn</em> that has the following signature
+and does what is described in the doc string.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9 ...</pre></div></td></tr></table></li></ol>
+                <a class="readmore" href="/advanced-programming-day-2.html">read more</a>
                 </div><!-- /.entry-content -->
             </article></li>
                 </ol><!-- /#posts-list -->
