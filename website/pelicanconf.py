@@ -2,10 +2,19 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
+# During Plugin debugging
+LOAD_CONTENT_CACHE = False
+
+# --- define plugins
+#PLUGINS =  ['disqus_python']
+
+
 AUTHOR = u'Mike & Chris'
 SITENAME = u'Programming in Python'
+
 SITEURL=''
 #SITEURL = 'https://chriscz.github.io/python_programming'
+
 
 
 PATH = 'content'
@@ -39,6 +48,8 @@ DEFAULT_PAGINATION = 10
 #RELATIVE_URLS = True
 
 
+THEME = 'notmyidea-cms' 
+DISQUS_SITENAME="pythonprogramming"
 
 # --- Theme specific configuration
 #THEME = 'pelican-mg' 
