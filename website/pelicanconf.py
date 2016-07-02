@@ -45,7 +45,7 @@ SOCIAL = []
 DEFAULT_PAGINATION = 10
 
 # Uncomment following line if you want document-relative URLs when developing
-#RELATIVE_URLS = True
+RELATIVE_URLS = True
 
 
 THEME = 'notmyidea-cms' 
@@ -57,3 +57,6 @@ DISQUS_SITENAME="pythonprogramming"
 #AUTHOR_SAVE_AS = ''
 #DIRECT_TEMPLATES = ('index', 'categories', 'archives', 'search', 'tipue_search')
 #TIPUE_SEARCH_SAVE_AS = 'tipue_search.json'
+
+
+STATIC_PATHS = ['resources']
