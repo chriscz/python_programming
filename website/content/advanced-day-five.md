@@ -1,6 +1,6 @@
 Title: Advanced Programming (Day 5)
 Date: 2016-7-01 23:30 
-Category: Exercises
+Category: Advanced Course
 
 Hey guys, it was a really awesome time, and we hope you make the best of the skills you have learnt!
 Remember that perseverance will make the difference, and that this is what will make you a better programmer.

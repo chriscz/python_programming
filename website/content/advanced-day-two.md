@@ -1,6 +1,6 @@
 Title: Advanced Programming (Day 2)
 Date: 2016-6-28 18:45
-Category: Exercises
+Category: Advanced Course
 
 Ok, so as promised here is the website. You can expect more 
 exercises to be uploaded in the next hour.

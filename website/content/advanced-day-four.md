@@ -1,6 +1,6 @@
 Title: Advanced Programming (Day four)
 Date: 2016-6-30 18:45
-Category: Exercises
+Category: Advanced Course
 
 Right, so from class you should remember that we started implementing the Learner class
 and that we completed the Date class. So here is the **skeleton**  for the file we

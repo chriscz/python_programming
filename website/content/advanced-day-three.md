@@ -1,6 +1,6 @@
 Title: Advanced Programming (Day 3)
 Date: 2016-6-29 18:45
-Category: Exercises
+Category: Advanced Course
 
 
 1. As you would remember, we  asked you to write the *Point* class in Python. 
