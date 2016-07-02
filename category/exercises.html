@@ -3,145 +3,161 @@
 <head>
         <title>Programming in Python - Exercises</title>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="https://chriscz.github.io/python_programming/theme/css/main.css" type="text/css" />
-        <link href="https://chriscz.github.io/python_programming/" type="application/atom+xml" rel="alternate" title="Programming in Python ATOM Feed" />
+        <link rel="stylesheet" href="../theme/css/main.css" type="text/css" />
+        <link href="../" type="application/atom+xml" rel="alternate" title="Programming in Python ATOM Feed" />
 
 
         <!--[if IE]>
                 <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
 
         <!--[if lte IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="https://chriscz.github.io/python_programming/css/ie.css"/>
-                <script src="https://chriscz.github.io/python_programming/js/IE8.js" type="text/javascript"></script><![endif]-->
+                <link rel="stylesheet" type="text/css" media="all" href="../css/ie.css"/>
+                <script src="../js/IE8.js" type="text/javascript"></script><![endif]-->
 
         <!--[if lt IE 7]>
-                <link rel="stylesheet" type="text/css" media="all" href="https://chriscz.github.io/python_programming/css/ie6.css"/><![endif]-->
+                <link rel="stylesheet" type="text/css" media="all" href="../css/ie6.css"/><![endif]-->
 
 </head>
 
 <body id="index" class="home">
         <header id="banner" class="body">
-                <h1><a href="https://chriscz.github.io/python_programming/index.html">Programming in Python </a></h1>
+                <h1><a href="../index.html">Programming in Python </a></h1>
                 <nav><ul>
-                <li><a href="https://chriscz.github.io/python_programming/">Archives</a></li>
+                <li><a href="../">Archives</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
 
      <section id="content" class="body">
         <aside id="featured"><article>
-                <h1 class="entry-title"><a href="https://chriscz.github.io/python_programming/advanced-programming-day-four.html">Advanced Programming (Day four)</a></h1>
+                <h1 class="entry-title"><a href="../advanced-programming-day-5.html">Advanced Programming (Day 5)</a></h1>
 <footer class="post-info">
-        <abbr class="published" title="2016-06-30T18:45:00+02:00">
-                Thu 30 June 2016
+        <abbr class="published" title="2016-07-01T23:30:00+02:00">
+                Fri 01 July 2016
         </abbr>
 
         <address class="vcard author">
-                By <a class="url fn" href="https://chriscz.github.io/python_programming/author/mike-chris.html">Mike & Chris</a>
+                By <a class="url fn" href="../author/mike-chris.html">Mike & Chris</a>
         </address>
-<p>In <a href="https://chriscz.github.io/python_programming/category/exercises.html">Exercises</a>. </p>
+<p>In <a href="../category/exercises.html">Exercises</a>. </p>
 </p></footer><!-- /.post-info --><!-- /.post-info -->
-                <p>Right, so from class you should remember that we started implementing the Learner class
-and that we completed the Date class. So here is the <strong>skeleton</strong>  for the file we
-expect to see tomorrow. Finish the unfinished methods in the skeleton code below, but don't worry too much if you can't do all the exercises,
-just do as many as you can. Tomorrow we plan to continue with Object-Oreintated programming, either by coding an electronic diary, or a game. 
-To be adequately prepared for this, you should just review some of the input-output things that you know. Or, if you prefer, we could code a small game, but it is then very important that you finish the Point class from Day 3, and review some of the drawing we did previously. Good Luck!</p>
-<div class="highlight"><pre><span></span>    <span class="c c-Singleline">#!python</span>
-    <span class="k">class</span> <span class="n">Date:</span>
-        <span class="n">def</span> <span class="n">__init__</span>(<span class="k">self</span>, <span class="n">year</span>, <span class="n">month</span>, <span class="n">day</span>):
-            <span class="k">self</span>.<span class="n">year</span> = <span class="n">year</span>
-            <span class="k">self</span>.<span class="n">month</span> = <span class="n">month</span>
-            <span class="k">self</span>.<span class="n">day</span> = <span class="n">day</span>
-
-        <span class="n">def</span> <span class="n">to_string</span>(<span class="k">self</span>):
-            <span class="s">&quot;&quot;&quot;</span>
-<span class="s">            returns a string</span>
-<span class="s">            &gt;&gt;&gt; D = Date(2016, 6,30)</span>
-<span class="s">            &gt;&gt;&gt; D.to_string()</span>
-<span class="s">            &gt;&gt;&gt; &#39;30 June 2016&#39;</span>
-<span class="s">            &quot;&quot;&quot;</span>
-            <span class="nb">pass</span>
-
-        <span class="n">def</span> <span class="n">less_than</span>(<span class="n">D</span>):
-            <span class="s">&quot;&quot;&quot;</span>
-<span class="s">            takes in a Date D, returns True if self is an earlier date than D, and returns false otherwise</span>
-<span class="s">            &gt;&gt;&gt; D1 = Date(2016, 6, 30)</span>
-<span class="s">            &gt;&gt;&gt; D2 = Date(2017, 7, 32)</span>
-<span class="s">            &gt;&gt;&gt; D1.less_than(D2)</span>
-<span class="s">            True</span>
-<span class="s">            &gt;&gt;&gt; D2 = Date(2016, 7, 32)</span>
-<span class="s">            &gt;&gt;&gt; D1.less_than(D2)</span>
-<span class="s">            True</span>
-<span class="s">            &gt;&gt;&gt; D2 = Date(2016, 6, 32)</span>
-<span class="s">            &gt;&gt;&gt; D1.less_than(D2)</span>
-<span class="s">            True</span>
-<span class="s">            &gt;&gt;&gt; D2 = Date(2016, 6, 30)</span>
-<span class="s">            &gt;&gt;&gt; D1.less_than(D2)</span>
-<span class="s">            False</span>
-<span class="s">            &quot;&quot;&quot;</span>
-            <span class="nb">pass</span>
-
-
-    <span class="k">class</span> <span class="n">Learner:</span>
-        <span class="n">def</span> <span class="n">__init__</span>(<span class="k">self</span>, <span class="n">first_name</span>, <span class="n">surname</span>, <span class="n">date_of_birth</span>, <span class="n">email</span>, <span class="n">address</span>):
-            <span class="k">self</span>.<span class="n">first_name</span> = <span class="n">first_name</span>
-            <span class="k">self</span>.<span class="n">surname</span>    = <span class="n">surname</span>
-            <span class="k">self</span>.<span class="n">date_of_birth</span> = <span class="n">date_of_birth</span>
-            <span class="k">self</span>.<span class="n">email</span> = <span class="n">email</span>
-            <span class="k">self</span>.<span class="n">address</span> = <span class="n">address</span>
-
-        <span class="n">def</span> <span class="n">display_details</span>(<span class="k">self</span>):
-            <span class="s">&quot;&quot;&quot;</span>
-<span class="s">            displays (prints) the details of the Learner, does NOT return anything.</span>
-<span class="s">            &gt;&gt;&gt; D = Date(1872, 6, 30)</span>
-<span class="s">            &gt;&gt;&gt; L = Learner(&quot;</span><span class="n">Bertrand</span><span class="s">&quot;, &quot;</span><span class="n">Russell</span><span class="s">&quot;, D, &quot;</span><span class="n">bertie</span><span class="nv">@gmail</span>.<span class="n">com</span><span class="s">&quot;, &quot;</span><span class="n">Cambridge</span><span class="s">&quot;)</span>
-<span class="s">            &gt;&gt;&gt; L.display_details()</span>
-<span class="s">            Name of Learner: Bertrand Russell</span>
-<span class="s">            Date of birth: 30 June 1872</span>
-<span class="s">            Email: bertie@gmail.completed</span>
-<span class="s">            Address: Cambridge</span>
-<span class="s">            &quot;&quot;&quot;</span>
-            <span class="nb">pass</span>
-
-        <span class="n">def</span> <span class="n">is_younger_than</span>(<span class="k">self</span>, <span class="n">L</span>):
-            <span class="s">&quot;&quot;&quot;this method takes in a Learner object L, and returns True if self is younger than L, returns false otherwise</span>
-<span class="s">            &gt;&gt;&gt; D1 = Date(1872, 6, 30)</span>
-<span class="s">            &gt;&gt;&gt; L1 = Learner(&quot;</span><span class="n">Bertrand</span><span class="s">&quot;, &quot;</span><span class="n">Russell</span><span class="s">&quot;, D1, &quot;</span><span class="n">bertie</span><span class="nv">@gmail</span>.<span class="n">com</span><span class="s">&quot;, &quot;</span><span class="n">Cambridge</span><span class="s">&quot;) </span>
-<span class="s">            &gt;&gt;&gt; D2 = Date(1879, 6, 30)</span>
-<span class="s">            &gt;&gt;&gt; L2 = Learner(&quot;</span><span class="n">Albert</span><span class="s">&quot;, &quot;</span><span class="n">Einstein</span><span class="s">&quot;, D2, &quot;</span><span class="n">uncle_albie</span><span class="nv">@gmail</span>.<span class="n">com</span><span class="s">&quot;, &quot;</span><span class="n">Princeton</span><span class="s">&quot;)</span>
-<span class="s">            &gt;&gt;&gt; L1.is_younger_than(L2)</span>
-<span class="s">            False</span>
-<span class="s">            pass</span>
-<span class="s">            &quot;&quot;&quot;</span>
-
-
-
-        <span class="k">class</span> <span class="n">ClassRoom:</span>
-        <span class="s">&quot;&quot;&quot;this class is supposed to represent a classroom of learners.</span>
-<span class="s">        it has no other attributes, other than a list of learners.&quot;&quot;&quot;</span>
-        <span class="n">def</span> <span class="n">__init__</span>(<span class="k">self</span>):
-            <span class="n">learner</span> = []
-
-        <span class="n">def</span> <span class="n">add_learner</span>(<span class="n">L</span>):
-            <span class="s">&quot;&quot;&quot;adds a learner L to the class room by appending it to learner&quot;&quot;&quot;</span>
-            <span class="k">self</span>.<span class="n">learner</span>.<span class="n">append</span>(<span class="n">L</span>)
-
-
-        <span class="n">def</span> <span class="n">youngest</span>(<span class="k">self</span>):
-            <span class="s">&quot;&quot;&quot;returns the youngest learner in the class&quot;&quot;&quot;</span>
-            <span class="nb">pass</span>
-
-
-        <span class="n">def</span> <span class="n">sort_by_age</span>(<span class="k">self</span>):
-            <span class="s">&quot;&quot;&quot;this method sorts the list learner by age, from youngest to oldest.&quot;&quot;&quot;</span>
-            <span class="nb">pass</span>
+                <p>Hey guys, it was a really awesome time, and we hope you make the best of the skills you have learnt!
+Remember that perseverance will make the difference, and that this is what will make you a better programmer.
+There is no place for arrogance.</p>
+<ol>
+<li>
+<p>On to the more important information. Remember what we said about writing files? There's one last thing
+that I would like to add to that discussion: remember to <strong>flush</strong> before closing.</p>
+<p><em>What is flushing?</em> you ask. Harddisks are slow and a computer's memory is fast. For this reason OS designers
+had files be written to RAM before writing them to disk. Flushing takes what's in memory and
+writes it to disk. You don't need to do it manually, since Python executes a flush before actually closing
+the file.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span>
+<span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;My awesome string</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1"># This is implied py close </span>
+<span class="c1"># f.flush()</span>
+<span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </pre></div>
+</td></tr></table>
+
+<p>Alternatively, you could use a more pythonic approach to reading files, which ensures that the files are
+always closed, even if an error occurs:</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;data.txt&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">f</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="s2">&quot;My awesome string</span><span class="se">\n</span><span class="s2">&quot;</span><span class="p">)</span>
+<span class="c1"># Here the file-handle (f) can no longer be used, since the file has been closed</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+<li>
+<p><strong>BUG</strong> Saving of your drawings to file by calling the <strong>save</strong> method of stddraw did not produce
+a valid image. The cause for this was trying to pass a <strong>file</strong> object to the method. 
+It should instead be used with a filename string.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="c1"># Supported types: bmp, jpg, png</span>
+<span class="n">stddraw</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="s2">&quot;filename.jpg&quot;</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+<li>
+<p>The cypher problem. Your task as code-breaker is to decipher a message in the given text file.
+To complete this task you need knowledge of the following: basic loops, dictionaries and files.
+Here's the <a href="../resources/cypher.zip">archive</a> containing the cypher assignment. If you've solved it, post your answers in the comments!
+<strong>HINT</strong>: How do you read a file character by character, instead of line by line?</p>
+</li>
+<li>
+<p>Links to useful Python resources, if you have any others, post in the comments!</p>
+<ol>
+<li>Our documentation and installations: <a href="https://goo.gl/3ZvPYJ">Website</a></li>
+<li><a href="https://docs.python.org/3.4/">The Python Documentation</a> also included in WinPython.   </li>
+<li><a href="http://greenteapress.com/wp/think-python-2e/">Think Python 2e</a></li>
+<li><a href="http://www.diveintopython3.net/">Dive into Python 3</a></li>
+<li><a href="http://python.swaroopch.com/">A Byte of Python</a></li>
+<li><a href="https://inventwithpython.com/makinggames.pdf">Making Games with Python</a></li>
+</ol>
+</li>
+<li>
+<p>The snake game. This isn't ready for you yet. When it is,
+you can download the skeleton and begin completing the different sections of the code. </p>
+</li>
+<li>
+<p><strong>BUG</strong> Fixed issue with stdlib imports when using IDLE. Here's the <a href="../resources/stdlib_updated_1.zip">updated stdlib</a>. 
+You no longer need to save your files inside the stdlib directory! There are two options to
+using stddraw. </p>
+<p>Option1</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">stdlib</span> <span class="kn">import</span> <span class="n">stddraw</span>
+<span class="n">stddraw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+<p>And Option 2    </p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">stdlib.stddraw</span>
+<span class="n">stdlib</span><span class="o">.</span><span class="n">stddraw</span><span class="o">.</span><span class="n">line</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+</pre></div>
+</td></tr></table>
+
+</li>
+</ol>
+<h2>Request</h2>
+<p>Please leave comments if something is missing, or if you would like us to discuss something specific in 
+more detail.</p>
         </article></aside><!-- /#featured -->
                 <h1>Other articles</h1>
                 <hr />
                     <ol id="posts-list" class="hfeed">
         <li><article class="hentry">
                 <header>
-                        <h1><a href="https://chriscz.github.io/python_programming/advanced-programming-day-3.html" rel="bookmark" title="Permalink to Advanced Programming (Day 3)">Advanced Programming (Day 3)</a></h1>
+                        <h1><a href="../advanced-programming-day-four.html" rel="bookmark" title="Permalink to Advanced Programming (Day four)">Advanced Programming (Day four)</a></h1>
+                </header>
+
+                <div class="entry-content">
+<footer class="post-info">
+        <abbr class="published" title="2016-06-30T18:45:00+02:00">
+                Thu 30 June 2016
+        </abbr>
+
+        <address class="vcard author">
+                By <a class="url fn" href="../author/mike-chris.html">Mike & Chris</a>
+        </address>
+<p>In <a href="../category/exercises.html">Exercises</a>. </p>
+</p></footer><!-- /.post-info --><!-- /.post-info -->
+                <p>Right, so from class you should remember that we started implementing the Learner class
+and that we completed the Date class. So here is the <strong>skeleton</strong>  for the file we
+expect to see tomorrow. Finish the unfinished methods in the skeleton code below, but don't worry too much if ...</p>
+                <a class="readmore" href="../advanced-programming-day-four.html">read more</a>
+                </div><!-- /.entry-content -->
+        </article></li>
+        <li><article class="hentry">
+                <header>
+                        <h1><a href="../advanced-programming-day-3.html" rel="bookmark" title="Permalink to Advanced Programming (Day 3)">Advanced Programming (Day 3)</a></h1>
                 </header>
 
                 <div class="entry-content">
@@ -151,21 +167,21 @@ To be adequately prepared for this, you should just review some of the input-out
         </abbr>
 
         <address class="vcard author">
-                By <a class="url fn" href="https://chriscz.github.io/python_programming/author/mike-chris.html">Mike & Chris</a>
+                By <a class="url fn" href="../author/mike-chris.html">Mike & Chris</a>
         </address>
-<p>In <a href="https://chriscz.github.io/python_programming/category/exercises.html">Exercises</a>. </p>
+<p>In <a href="../category/exercises.html">Exercises</a>. </p>
 </p></footer><!-- /.post-info --><!-- /.post-info -->
                 <ol>
 <li>As you would remember, we  asked you to write the <em>Point</em> class in Python. 
 This class represents a point on the cartesian plane. Think about what 
 attributes you need for this class, then complete the constructor and the methods.
 Let's see what the structure and the methods are for ...</li></ol>
-                <a class="readmore" href="https://chriscz.github.io/python_programming/advanced-programming-day-3.html">read more</a>
+                <a class="readmore" href="../advanced-programming-day-3.html">read more</a>
                 </div><!-- /.entry-content -->
         </article></li>
         <li><article class="hentry">
                 <header>
-                        <h1><a href="https://chriscz.github.io/python_programming/advanced-programming-day-2.html" rel="bookmark" title="Permalink to Advanced Programming (Day 2)">Advanced Programming (Day 2)</a></h1>
+                        <h1><a href="../advanced-programming-day-2.html" rel="bookmark" title="Permalink to Advanced Programming (Day 2)">Advanced Programming (Day 2)</a></h1>
                 </header>
 
                 <div class="entry-content">
@@ -175,9 +191,9 @@ Let's see what the structure and the methods are for ...</li></ol>
         </abbr>
 
         <address class="vcard author">
-                By <a class="url fn" href="https://chriscz.github.io/python_programming/author/mike-chris.html">Mike & Chris</a>
+                By <a class="url fn" href="../author/mike-chris.html">Mike & Chris</a>
         </address>
-<p>In <a href="https://chriscz.github.io/python_programming/category/exercises.html">Exercises</a>. </p>
+<p>In <a href="../category/exercises.html">Exercises</a>. </p>
 </p></footer><!-- /.post-info --><!-- /.post-info -->
                 <p>Ok, so as promised here is the website. You can expect more 
 exercises to be uploaded in the next hour.</p>
@@ -195,7 +211,7 @@ and does what is described in the doc string.</p>
  7
  8
  9 ...</pre></div></td></tr></table></li></ol>
-                <a class="readmore" href="https://chriscz.github.io/python_programming/advanced-programming-day-2.html">read more</a>
+                <a class="readmore" href="../advanced-programming-day-2.html">read more</a>
                 </div><!-- /.entry-content -->
         </article></li>
 </ol><!-- /#posts-list -->
@@ -205,8 +221,7 @@ and does what is described in the doc string.</p>
                 <div class="widget">
                         <h2>Categories</h2>
                         <ul>
-                           <li class="active"><a href="https://chriscz.github.io/python_programming/category/exercises.html">Exercises</a></li>
-                           <li ><a href="https://chriscz.github.io/python_programming/category/revision.html">Revision</a></li>
+                           <li class="active"><a href="../category/exercises.html">Exercises</a></li>
                         </ul>
                 </div>
         </aside><!-- /#sidebar -->
